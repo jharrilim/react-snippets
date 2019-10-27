@@ -1,0 +1,27 @@
+{
+	"React Native Component - TypeScript": {
+		"scope": "typescriptreact",
+		"prefix": "tsxc",
+		"body": [
+			"import React from 'react';",
+			"import { View, StyleSheet } from 'react-native';",
+			"",
+			"const styles = StyleSheet.create({",
+			"  root: {",
+			"",
+			"  },",
+			"});",
+		  	"",
+			"export const ${1:Component} = () => {",
+			"  return (",
+			"    <View style={styles.root}>",
+			"      $0",
+			"    </View>",
+			"  );",
+			"};",
+			"",
+			"export default ${1:Component};"
+		],
+		"description": "React Native TSX Component Stub"
+	}
+}
