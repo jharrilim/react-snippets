@@ -3,7 +3,7 @@
 		"scope": "typescriptreact",
 		"prefix": "tsxc",
 		"body": [
-			"import React from 'react';",
+			"import React, { FC } from 'react';",
 			"import { View, StyleSheet } from 'react-native';",
 			"",
 			"const styles = StyleSheet.create({",
@@ -11,8 +11,12 @@
 			"",
 			"  },",
 			"});",
-		  	"",
-			"export const ${1:Component} = () => {",
+			"",
+			"interface ${1:${TM_FILENAME_BASE}}Props {",
+			"",
+			"}",
+			"",
+			"export const ${1:${TM_FILENAME_BASE}}: FC<${1:${TM_FILENAME_BASE}}Props> = ({ }) => {",
 			"  return (",
 			"    <View style={styles.root}>",
 			"      $0",
@@ -20,7 +24,8 @@
 			"  );",
 			"};",
 			"",
-			"export default ${1:Component};"
+			"export default ${1:${TM_FILENAME_BASE}};",
+			""
 		],
 		"description": "React Native TSX Component Stub"
 	}
