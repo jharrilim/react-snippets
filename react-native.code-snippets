@@ -36,7 +36,7 @@
 			"import React from 'react';",
 			"import PropTypes from 'prop-types';",
 			"import { connect } from 'react-redux';",
-			"import { Grid, Typography, createStyles, withStyles } from '@material-ui/core';",
+			"import { Grid, createStyles, withStyles } from '@material-ui/core';",
 			"",
 			"/**",
 			" * @param {import('@material-ui/core').Theme} theme",
