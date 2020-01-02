@@ -28,5 +28,44 @@
 			""
 		],
 		"description": "React Native TSX Component Stub"
+	},
+	"Material Component": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "jsxc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import { connect } from 'react-redux';",
+			"import { Grid, Typography, createStyles, withStyles } from '@material-ui/core';",
+			"",
+			"/**",
+			" * @param {import('@material-ui/core').Theme} theme",
+			" */",
+			"const styles = createStyles({",
+			"  root: {",
+			"",
+			"  },",
+			"});",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = ({ classes }) => {",
+			"  return (",
+			"    <Grid container item className={classes.root}>",
+			"      $0",
+			"    </Grid>",
+			"  );",
+			"};",
+			"",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"  classes: PropTypes.object,",
+			"};",
+			"",
+			"export default connect(",
+			"  () => { },",
+			"  { },",
+			"  withStyles(styles)(${1:${TM_FILENAME_BASE}})",
+			");",
+			""
+		],
+		"description": "React Material Component Stub"
 	}
 }
