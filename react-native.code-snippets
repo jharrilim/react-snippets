@@ -60,7 +60,7 @@
 			"};",
 			"",
 			"export default connect(",
-			"  () => { },",
+			"  state => { },",
 			"  { },",
 			"  withStyles(styles)(${1:${TM_FILENAME_BASE}})",
 			");",
