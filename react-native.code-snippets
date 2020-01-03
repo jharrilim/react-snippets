@@ -60,10 +60,9 @@
 			"};",
 			"",
 			"export default connect(",
-			"  state => { },",
+			"  state => ({ }),",
 			"  { },",
-			"  withStyles(styles)(${1:${TM_FILENAME_BASE}})",
-			");",
+			")(withStyles(styles)(${1:${TM_FILENAME_BASE}}));",
 			""
 		],
 		"description": "React Material Component Stub"
