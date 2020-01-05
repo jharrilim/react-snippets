@@ -1,0 +1,20 @@
+{
+    "name": "react-snippets",
+    "displayName": "react-snippets",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "react",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
