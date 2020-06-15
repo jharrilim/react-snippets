@@ -16,6 +16,7 @@
 	"Material Component": {
 		"prefix": "qwe",
 		"description": "Typescript React page component with material defaults",
+		"scope": "typescriptreact",
 		"body": [
 			"import React, {",
 			"  forwardRef,",
