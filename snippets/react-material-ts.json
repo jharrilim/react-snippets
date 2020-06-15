@@ -1,0 +1,60 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Material Component": {
+		"prefix": "qwe",
+		"description": "Typescript React page component with material defaults",
+		"body": [
+			"import React, {",
+			"  forwardRef,",
+			"  memo,",
+			"} from 'react';",
+			"import {",
+			"  Grid,",
+			"  GridProps",
+			"  makeStyles,",
+			"} from '@material-ui/core';",
+			"",
+			"const useStyles = makeStyles(theme => ({",
+			"  root: {",
+			"    ",
+			"  },",
+			"}));",
+			"",
+			"interface ${TM_FILENAME_BASE}Props extends GridProps {",
+			"",
+			"}",
+			"",
+			"const ${TM_FILENAME_BASE} = memo(forwardRef<HTMLDivElement, ${TM_FILENAME_BASE}Props>(({",
+			"",
+			" ...props",
+			"}, ref) => {",
+			"  const classes = useStyles();",
+			"  return (",
+			"    <Grid ref={ref} container item xs={12} className={classes.root} {...props}>",
+			"      $1",
+			"    </Grid>",
+			"  );",
+			"}), (prev, next) => Object.is(prev, next);",
+			"",
+			"const ${TM_FILENAME_BASE}Container = forwardRef<HTMLDivElement, GridProps>((props, ref) => {",
+			"  return <${TM_FILENAME_BASE} ref={ref} {...props} />;",
+			"});",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		]
+	}
+}
